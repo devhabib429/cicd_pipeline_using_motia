@@ -1,0 +1,24 @@
+[
+  {
+    "name": "ReceiveWebhook",
+    "type": "api",
+    "path": "/webhook",
+    "method": "POST",
+    "emits": ["code-pushed"],
+    "flows": ["cicd-flow"]
+  },
+  {
+    "name": "PullCode",
+    "type": "event",
+    "subscribes": ["code-pushed"],
+    "emits": ["code-pulled"],
+    "flows": ["cicd-flow"]
+  },
+  {
+    "name": "DeployApp",
+    "type": "event",
+    "subscribes": ["code-pulled"],
+    "emits": [],
+    "flows": ["cicd-flow"]
+  }
+]

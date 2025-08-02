@@ -1,0 +1,46 @@
+[
+  {
+    "id": "default",
+    "config": {
+      "steps/03-check-state-change.step.ts": {
+        "x": 78,
+        "y": 199,
+        "targetHandlePosition": "top"
+      },
+      "steps/02-test-state.step.ts": {
+        "x": 60,
+        "y": 36,
+        "sourceHandlePosition": "bottom",
+        "targetHandlePosition": "left"
+      },
+      "steps/01-api.step.ts": {
+        "x": -258,
+        "y": 85,
+        "sourceHandlePosition": "right",
+        "targetHandlePosition": "left"
+      },
+      "steps/00-noop.step.ts": {
+        "x": -507,
+        "y": 111,
+        "sourceHandlePosition": "right"
+      }
+    }
+  },
+  {
+    "id": "cicd-flow",
+    "config": {
+      "steps/receiveWebhook.step.js": {
+        "x": -176,
+        "y": 87
+      },
+      "steps/pullCode.step.js": {
+        "x": 164,
+        "y": 134
+      },
+      "steps/deployApp.step.js": {
+        "x": 296,
+        "y": 254
+      }
+    }
+  }
+]
